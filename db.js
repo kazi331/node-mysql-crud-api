@@ -1,10 +1,11 @@
 import mysql from 'mysql2'
 // LOCAL CONNECTION
+console.log(process.env.MySQL_HOST)
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '01612178331@Ks',
-    database: 'test'
+    host: process.env.MySQL_HOST,
+    user: process.env.MySQL_USER,
+    password: process.env.MySQL_PASSWORD,
+    database: process.env.MySQL_DATABASE,
 })
 
 
