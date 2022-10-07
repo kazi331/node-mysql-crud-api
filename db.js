@@ -1,6 +1,8 @@
 import mysql from 'mysql2'
+// require('dotenv').config();
+import {} from 'dotenv/config'
+
 // LOCAL CONNECTION
-console.log(process.env.MySQL_HOST)
 const db = mysql.createConnection({
     host: process.env.MySQL_HOST,
     user: process.env.MySQL_USER,

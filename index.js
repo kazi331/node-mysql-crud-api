@@ -3,8 +3,10 @@ import express from 'express';
 import booksRoute from './routes/books.js';
 import usersRoute from './routes/users.js';
 
-// MIDDLEWARES
+
 const app = express();
+// MIDDLEWARES
+
 app.use(express.json());
 app.use(cors())
 
