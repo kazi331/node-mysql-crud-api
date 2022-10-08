@@ -15,7 +15,7 @@ export const add = (req, res) => {
     const q = "INSERT INTO books (`name`, `writer`, `publisher`, `pdate`) VALUES (?)";
     const r = req.body;
     const values = [r.name, r.writer, r.publisher, r.pdate];
-    console.log(values)
+    // console.log(values)
     db.query(q, [values], (err, data) => {
         if (err) return res.json(err);
         return res.json(data)
